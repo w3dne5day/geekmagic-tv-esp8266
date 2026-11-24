@@ -1891,6 +1891,8 @@ void displayInit() {
     tft.setRotation(0);
     tft.invertDisplay(true);
     tft.fillScreen(TFT_BLACK);
+    tft.writecommand(0x36);
+    tft.writedata(0x40);
 
 
     displayState.line2[0] = '\0';
